@@ -1,0 +1,14 @@
+# reference genome: CAS-CDF_Pyrnan_1.0
+# reference species: Pyrocephalus nanus (Galapagos flycatcher)
+# reference ID: GCA_038380795.1
+
+workdir=/lustre/scratch/jmanthey/18_contopus_sv
+
+cd ${workdir}
+mkdir 00_data
+mkdir 01_haplotypes
+mkdir 02_aligned
+mkdir 03_callable
+mkdir 10_align_script
+mkdir 11_callable_script
+
