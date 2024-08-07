@@ -21,11 +21,15 @@ minimap2 -cx asm20 -m 10000 -z 10000,50 -r 50000 --end-bonus=100 -O 5,56 -E 4,1 
 ${workdir}/02_aligned/${basename_array}.paf
 
 
-
 # call variants from alignments
 paftools.js call -L 50000 -s ${basename_array} \
 -f ${reference} ${workdir}/02_aligned/${basename_array}.paf | sed 's|1/1|1|g' > \
 ${workdir}/02_aligned/${basename_array}.vcf
+
+
+# compress and index vcf 
+bgzip -c ${workdir}/02_aligned/${basename_array}.vcf > ${workdir}/02_aligned/${basename_array}.vcf.gz
+tabix -p vcf ${workdir}/02_aligned/${basename_array}.vcf.gz
 
 
 
