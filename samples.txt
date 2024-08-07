@@ -1,0 +1,2 @@
+C_sordidulus__KU39667	C_sordidulus__KU39667__hap1	C_sordidulus__KU39667__hap2
+C_virens__KU39615	C_virens__KU39615__hap1	C_virens__KU39615__hap2
