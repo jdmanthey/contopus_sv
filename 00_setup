@@ -9,6 +9,11 @@ mkdir 00_data
 mkdir 01_haplotypes
 mkdir 02_aligned
 mkdir 03_callable
+mkdir 04_pan_vcf
+mkdir 05_fastq
+mkdir 06_pangenie_output
+mkdir 07_merged_vcf
 mkdir 10_align_script
 mkdir 11_callable_script
-
+mkdir 12_run_pangenie
+mkdir 13_filter_scripts
