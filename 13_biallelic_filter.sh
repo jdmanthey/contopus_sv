@@ -33,3 +33,18 @@ bgzip ${workdir}/06_pangenie_output/${basename_array}_biallelic-filtered.vcf
 
 tabix -p vcf ${workdir}/06_pangenie_output/${basename_array}_biallelic-filtered.vcf.gz
 
+# make a tmp file for reheader
+echo ${basename_array} > ${basename_array}.txt
+
+# reheader the vcf (individual name is just sample, so need to rename)
+bcftools reheader -s ${basename_array}.txt -o \
+${workdir}/06_pangenie_output/${basename_array}_biallelic-filtered2.vcf.gz \
+${workdir}/06_pangenie_output/${basename_array}_biallelic-filtered.vcf.gz
+
+# index
+tabix -p vcf ${workdir}/06_pangenie_output/${basename_array}_biallelic-filtered2.vcf.gz
+
+# remove unneeded file
+rm ${basename_array}.txt
+
+
