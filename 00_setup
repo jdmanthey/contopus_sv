@@ -16,6 +16,7 @@ mkdir 07_merged_vcf
 mkdir 08_sniffles
 mkdir 09_inversions_geno
 mkdir 10_pca
+mkdir 11_blast_indels
 mkdir 20_align_script
 mkdir 21_callable_script
 mkdir 22_run_pangenie
