@@ -13,7 +13,11 @@ mkdir 04_pan_vcf
 mkdir 05_fastq
 mkdir 06_pangenie_output
 mkdir 07_merged_vcf
-mkdir 10_align_script
-mkdir 11_callable_script
-mkdir 12_run_pangenie
-mkdir 13_filter_scripts
+mkdir 08_sniffles
+mkdir 09_inversions_geno
+mkdir 10_pca
+mkdir 20_align_script
+mkdir 21_callable_script
+mkdir 22_run_pangenie
+mkdir 23_filter_scripts
+mkdir 24_sniffles_scripts
